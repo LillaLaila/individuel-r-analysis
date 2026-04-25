@@ -54,6 +54,7 @@ fig1 <- ggplot(costs_by_age,
   )
 
 print(fig1)
+ggsave("fig1_total_costs_age.png", plot = fig1, width = 6, height = 4)
 
 cat("
   The diagram of total insurance costs by age group shows that 
@@ -77,6 +78,7 @@ fig2 <- ggplot(df_clean,
   theme_minimal()
 
 print(fig2)
+ggsave("fig2_distribution_by_age.png", plot = fig2, width = 6, height = 4)
 
 cat("
   The boxplot shows how insurance costs are distributed within each age group
@@ -147,10 +149,12 @@ p3 <- ggplot(df_clean,
   ) +
   theme_minimal()
 
-print ((p1 + p2)/p3 +
+fig3 <- (p1 + p2)/p3 +
   plot_annotation(
     title = "Distribution of insurance costs by smoking status, gender, and region"
-  ))
+  )
+print(fig3)
+ggsave("fig3_distribution_smoking_gender_region.png", plot = fig3, width = 8, height = 6)
 
 
 cat("
