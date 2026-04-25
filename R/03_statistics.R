@@ -43,6 +43,7 @@ fig1 <- ggplot(costs_by_age,
   geom_text(aes(label = round(total_cost, 0)),
             hjust = -0.1, size = 3.5) +
   coord_flip() +
+  scale_y_continuous(labels = scales::label_number(scale = 1e-6, suffix = "M")) +
   labs(
     title = "Total insurance costs by age group",
     x = "Age group",
