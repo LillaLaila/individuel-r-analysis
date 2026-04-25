@@ -110,7 +110,7 @@ print(costs_by_region)
 
 cat("\nResult:
 
-  The South region has the highest total insurance costs (3297950) 
+  The South region has the highest total insurance costs (3297950)  
   and the largest number of customers (320), 
   while the East region has the lowest total costs (2493169) and the fewest customers (253).
   
