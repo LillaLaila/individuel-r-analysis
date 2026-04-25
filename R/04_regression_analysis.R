@@ -27,8 +27,8 @@ cat("\nInterpretation of model results:
   The results show that smoking has the strongest effect on insurance costs.
   Being a smoker increases insurance costs by approximately 7968 units.
   
-  Age and BMI also affect insurance costs. 
-  Older people and people with higher BMI usually pay more for insurance.
+  Age and bmi also affect insurance costs. 
+  Older people and people with higher bmi usually pay more for insurance.
  
   Gender and children do not have a clear effect on insurance costs.\n")
 
@@ -36,7 +36,7 @@ cat("\nInterpretation of model results:
 
 cat("\nAre the results reasonable?
 
-  The results seem reasonable, as smoking, age and BMI are related to health risks, 
+  The results seem reasonable, as smoking, age and bmi are related to health risks, 
   which can increase insurance costs.\n")
 
 
